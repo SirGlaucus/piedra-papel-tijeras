@@ -71,12 +71,10 @@ for (numeroPartidas; numeroPartidas >= 1; numeroPartidas--) //Comenzamos con un 
         if (vicPC > vicHuman) // Victoria de la PC
         {
             document.write(`Con ${vicPC} victorias de la PC, ${vicHuman} victorias del usuario y ${empate} empates, la PC ha ganado.`);
-        }
-        if (vicPC < vicHuman) // Victoria del usuario
+        } else if (vicPC < vicHuman) // Victoria del usuario
         {
             document.write(`Con ${vicPC} victorias de la PC, ${vicHuman} victorias del usuario y ${empate} empates, el usuario ha ganado.`);
-        }
-        if (vicPC === vicHuman) // Empate
+        } else if (vicPC === vicHuman) // Empate
         {
             document.write(`Con ${vicPC} victorias de la PC, ${vicHuman} victorias del usuario y ${empate} empates, ha sido un empate.`);
         }
